@@ -1,4 +1,4 @@
-import { assertEquals } from "https://deno.land/std@v0.60.0/testing/asserts.ts";
+import { assertEquals } from "https://deno.land/std@v0.61.0/testing/asserts.ts";
 import * as ws from "./mod.ts";
 
 const goldenUnindented =
