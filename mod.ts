@@ -5,7 +5,7 @@ export function minWhitespaceIndent(text: string): number {
 
 export function unindentWhitespace(
   text: string,
-  removeInitialNewLine: boolean = true,
+  removeInitialNewLine = true,
 ): string {
   const indent = minWhitespaceIndent(text);
   const regex = new RegExp(`^[ \\t]{${indent}}`, "gm");
@@ -21,8 +21,8 @@ export function singleLineTrim(text: string): string {
 
 export function wordWrap(
   str: string,
-  newLineStr: string = "\n",
-  maxWidth: number = 100,
+  newLineStr = "\n",
+  maxWidth = 100,
 ) {
   const whitespRegEx = new RegExp(/^\s$/);
   let result = "";
